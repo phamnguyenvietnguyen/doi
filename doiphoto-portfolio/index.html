@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nguyễn Văn A – Product Designer & AI Tinkerer</title>
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Văn A – chuyên thiết kế sản phẩm AI và trải nghiệm 3D.">
+  <meta name="keywords" content="Nguyễn Văn A, portfolio, AI, 3D, UX, product design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Schema giúp Google Assistant đọc đúng -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nguyễn Văn A",
+    "jobTitle": "Product Designer",
+    "url": "https://yourdomain.vercel.app",
+    "sameAs": [
+      "https://linkedin.com/in/yourname",
+      "https://github.com/yourname"
+    ]
+  }
+  </script>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Nguyễn Văn A – Portfolio">
+  <meta property="og:description" content="Chào bạn, mình là A – kể câu chuyện bằng thiết kế & AI.">
+  <meta property="og:image" content="https://yourdomain.vercel.app/assets/og.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font handmade -->
+  <link rel="preload" href="assets/BungeeShade-Regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <!-- Chatbot AI nhỏ gọn -->
+  <chat-bot id="ai-chat" aria-label="Chat với mình"></chat-bot>
+
+  <!-- Chapter 0: Hero 3D -->
+  <section id="hero" class="chapter">
+    <canvas id="canvas3d"></canvas>
+    <div class="hero-text">
+      <h1>Chào, mình là <span class="wabi">Nguyễn Văn A</span></h1>
+      <p>Product Designer kể câu chuyện bằng AI & 3D.</p>
+      <button class="cta" onclick="scrollToChapter('about')">Kể tiếp ↓</button>
+    </div>
+  </section>
+
+  <!-- Chapter 1: About -->
+  <section id="about" class="chapter">
+    <div class="story-content">
+      <h2>Giới thiệu</h2>
+      <p>Mình thích những điều <em>chưa hoàn hảo</em> – vì đó là nơi cảm xúc bắt đầu.</p>
+      <img src="assets/me.jpg" loading="lazy" alt="Nguyễn Văn A đang vẽ">
+    </div>
+  </section>
+
+  <!-- Chapter 2: Work -->
+  <section id="work" class="chapter">
+    <h2>Dự án</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="assets/prj1.jpg" alt="Dự án AI gợi ý trang phục">
+        <h3>AI Stylist</h3>
+        <p>Phân tích hành vi người dùng để gợi ý outfit trong 0.3s.</p>
+      </article>
+      <article class="card">
+        <img src="assets/prj2.jpg" alt="Dự án 3D e-commerce">
+        <h3>3D Sneaker Store</h3>
+        <p>WebGL giúp khách xoay giày 360° trên mobile.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Chapter 3: Contact -->
+  <section id="contact" class="chapter">
+    <h2>Kết nối</h2>
+    <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+    <div class="social">
+      <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© 2025 – Built with ❤ & AI</footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
